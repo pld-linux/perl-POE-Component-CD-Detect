@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	POE
-%define	pnam	Component-CD-Detect
+%define		pdir	POE
+%define		pnam	Component-CD-Detect
 Summary:	POE::Component::CD::Detect - detects CD insertions and provides TOC
 Summary(pl):	POE::Component::CD::Detect - wykrywanie w³o¿enia CD i odczytanie TOC
 Name:		perl-POE-Component-CD-Detect
