@@ -6,7 +6,7 @@
 %define		pdir	POE
 %define		pnam	Component-CD-Detect
 Summary:	POE::Component::CD::Detect - detects CD insertions and provides TOC
-Summary(pl):	POE::Component::CD::Detect - wykrywanie w≥oøenia CD i odczytanie TOC
+Summary(pl.UTF-8):   POE::Component::CD::Detect - wykrywanie w≈Ço≈ºenia CD i odczytanie TOC
 Name:		perl-POE-Component-CD-Detect
 Version:	1.1
 Release:	1
@@ -26,10 +26,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This POE component detects the insertion of a CD into a given drive and
 issues a callback to the caller with the disc's table of contents.
 
-%description -l pl
-Ten komponent POE wykrywa fakt w≥oøenia p≥yty CD do danego napÍdu i
-wywo≥uje funkcjÍ callback podan± przy wywo≥aniu przekazuj±c spis
-zawarto∂ci p≥yty (TOC).
+%description -l pl.UTF-8
+Ten komponent POE wykrywa fakt w≈Ço≈ºenia p≈Çyty CD do danego napƒôdu i
+wywo≈Çuje funkcjƒô callback podanƒÖ przy wywo≈Çaniu przekazujƒÖc spis
+zawarto≈õci p≈Çyty (TOC).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
