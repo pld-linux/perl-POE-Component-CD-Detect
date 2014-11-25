@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	POE
 %define		pnam	Component-CD-Detect
+%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Component::CD::Detect - detects CD insertions and provides TOC
 Summary(pl.UTF-8):	POE::Component::CD::Detect - wykrywanie włożenia CD i odczytanie TOC
 Name:		perl-POE-Component-CD-Detect
@@ -14,6 +14,7 @@ License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	92b8377a52c3a67e9084c51ba9c2cdf2
+URL:		http://search.cpan.org/dist/POE-Component-CD-Detect/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -23,8 +24,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This POE component detects the insertion of a CD into a given drive and
-issues a callback to the caller with the disc's table of contents.
+This POE component detects the insertion of a CD into a given drive
+and issues a callback to the caller with the disc's table of contents.
 
 %description -l pl.UTF-8
 Ten komponent POE wykrywa fakt włożenia płyty CD do danego napędu i
